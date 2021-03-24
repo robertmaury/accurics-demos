@@ -10,7 +10,7 @@ resource "aws_security_group" "aws-demo-security-group" {
     to_port     = 22
     from_port   = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["10.1.1.1/32"]
   }
 
   egress {
